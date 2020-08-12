@@ -1,0 +1,41 @@
+.page-header__logo-image--tablet {
+  display: none;
+}
+
+.page-header__text {
+  font-family: $roboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+  display: block;
+}
+
+.page-header__heading {
+font-family: $roboto-condensed;
+font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+//color: #ffffff;
+display: block;
+}
+
+.page-header__wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.page-header__link {
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 14px;
+  padding-bottom: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  //color: #ffffff;
+  margin-left: 38px;
+}

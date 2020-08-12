@@ -1,0 +1,53 @@
+.header-list {
+  margin: 0;
+  padding: 0;
+  margin-left: 550px;
+  list-style: none;
+  display: flex;
+  width: 441px;
+  justify-content: space-between;
+}
+
+.header-list__link {
+  font-family: $pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  //color: #ffffff;
+}
+
+.header-list__link--mail {
+  position: relative;
+  padding-left: 39px;
+}
+
+.header-list__link--mail::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 14px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-image: url(../img/icon-mail-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.header-list__link--phone {
+  position: relative;
+  padding-left: 34px;
+}
+
+.header-list__link--phone::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-image: url(../img/icon-phone-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
