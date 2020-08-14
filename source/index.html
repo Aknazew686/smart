@@ -11,35 +11,37 @@
 
 <body>
   <header class="page-header">
-    <div class="container">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <svg class="page-header__logo page-header__logo-image page-header__logo-image--desktop" width="52" height="52"
-            viewBox="0 0 52 52">
-            <use xlink:href="img/sprite.svg#icon-logo"></use>
-          </svg>
-          <svg class="page-header__logo page-header__logo-image page-header__logo-image--tablet" width="38" height="38"
-            viewBox="0 0 38 38">
-            <use xlink:href="img/sprite.svg#icon-logo-mobile"></use>
-          </svg>
-        </a>
-        <div class="wrapper">
-          <span class="page-header__heading">Smart Device</span>
-          <span class="page-header__text">умные технологии</span>
+    <div class="container container--mobile">
+      <div class="page-header__relative">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <svg class="page-header__logo page-header__logo-image page-header__logo-image--desktop" width="52"
+              height="52" viewBox="0 0 52 52">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
+            <svg class="page-header__logo page-header__logo-image page-header__logo-image--mobile" width="38"
+              height="38" viewBox="0 0 38 38">
+              <use xlink:href="img/sprite.svg#icon-logo-mobile"></use>
+            </svg>
+          </a>
+          <div class="wrapper">
+            <p class="page-header__heading">Smart Device</p>
+            <p class="page-header__text">умные технологии</p>
+          </div>
+          <ul class="page-header__list header-list">
+            <li class="header-list__item">
+              <a class="header-list__link header-list__link--mail" href="mailto:info@sd.ru">
+                <span class="header-list__text">info@sd.ru</span>
+              </a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link header-list__link--phone" href="tel:+74950005252">
+                <span class="header-list__text">+7 (495) 000 52 52</span>
+              </a>
+            </li>
+          </ul>
+          <a class="page-header__link" href="#">Заказать звонок</a>
         </div>
-        <ul class="page-header__list header-list">
-          <li class="header-list__item">
-            <a class="header-list__link header-list__link--mail" href="mailto:info@sd.ru">
-              <span class="header-list__text">info@sd.ru</span>
-            </a>
-          </li>
-          <li class="header-list__item">
-            <a class="header-list__link header-list__link--phone" href="tel:+74950005252">
-              <span class="header-list__text">+7 (495) 000 52 52</span>
-            </a>
-          </li>
-        </ul>
-        <a class="page-header__link" href="#">Заказать звонок</a>
       </div>
     </div>
   </header>
@@ -48,11 +50,77 @@
       <div class="container">
         <h1 class="page-main__heading">Печатные платы</h1>
         <p class="page-main__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="page-main__link" href="#">Получить бесплатную консультацию</a>
+        <a class="page-main__link" href="#">Получить <span
+            class="page-main__link page-main__link--hidden">бесплатную</span> консультацию</a>
         <a class="page-main__scroll" href="#">Скролл вниз</a>
       </div>
     </div>
-
+    <section class="features">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="features__wrapper">
+        <ul class="features__list">
+          <li class="features__item features__item--timing">
+            <div class="description">
+              <p class="description__heading">Оперативные сроки</p>
+              <p class="description__text">Усовершенствованная логистическая система позволяет нам просчитывать
+                стоимость,
+                производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+            </div>
+          </li>
+          <li class="features__item features__item--suppliers">
+            <div class="description">
+              <p class="description__heading">Крупные поставщики</p>
+              <p class="description__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
+                HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+              </p>
+            </div>
+          </li>
+          <li class="features__item features__item--confidentiality">
+            <div class="description">
+              <p class="description__heading">Полная конфиденциальность</p>
+              <p class="description__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+            </div>
+          </li>
+          <li class="features__item features__item--cost">
+            <div class="description">
+              <p class="description__heading">Персонализация стоимости</p>
+              <p class="description__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
+                установить ту цену, которая Вас устраивает.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="company">
+      <h2 class="visually-hidden">О компании</h2>
+      <div class="container">
+        <div class="company__wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/number-desktop.webp, img/number-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/number-tablet.webp, img/number-tablet@2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="img/number-desktop.png, img/number-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/number-tablet.png, img/number-tablet@2x.png 2x">
+            <img class="company__image" src="img/number-tablet.png" srcset="img/number-tablet@2x.png 2x"
+              alt="Фотография надписи года">
+          </picture>
+          <div class="company__flex">
+            <p class="company__heading">О компании</p>
+            <p class="company__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
+              мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+            <p class="company__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+              HOLGLITRONIC, REFOND. Печатные
+              платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+              РоссАвтоПрома
+              (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники
+              России.
+            </p>
+            <a class="company__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 

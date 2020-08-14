@@ -1,3 +1,10 @@
 .wrapper {
   margin-left: 16px;
+  width: 134px;
+}
+
+@media (max-width: $tablet-width) {
+  .wrapper {
+    display: none;
+  }
 }

@@ -1,12 +1,14 @@
 .page-main__wrapper {
-  background-image: url('../img/bg-back-desktop.jpg');
-  background-size: cover;
-  background-position: center;
+  background-image: url('../img/circuit-board-desktop.png'), url('../img/bg-back-desktop.jpg');
+  background-size:  auto, cover;
+  background-position: calc(50% + 431px) 69%, center;
+  padding-bottom: 89px;
+  background-repeat: no-repeat;
 }
 
 @media (min-resolution: $retina) {
   .page-main__wrapper{
-    background-image: url('../img/bg-back-desktop@2x.jpg');
+    background-image: url('../img/circuit-board-desktop@2x.png'), url('../img/bg-back-desktop@2x.jpg');
   }
 }
 
@@ -14,6 +16,7 @@
   padding: 0;
   margin: 0;
   padding-top: 350px;
+  margin-bottom: 32px;
   font-family: $roboto-condensed;
   font-weight: 700;
   font-size: 80px;
@@ -28,6 +31,7 @@
   padding: 0;
   margin: 0;
   padding-left: 94px;
+  margin-bottom: 37px;
   font-family: $pt-mono;
   font-weight: normal;
   font-size: 22px;
@@ -60,9 +64,16 @@
   padding: 0 28px;
   padding-top: 20px;
   padding-bottom: 11px;
+  margin-bottom: 96px;
   background-color: #00B2FF;
   border-radius: 5px;
-  display: inline-block;
+  display: block;
+  width: 342px;
+}
+
+.page-main__link--hidden {
+  display: inline;
+  padding: 0;
 }
 
 .page-main__scroll {
@@ -74,4 +85,76 @@
   opacity: 0.5;
   transform: rotate(-90deg);
   display: inline-block;
+  padding-bottom: 78px;
+}
+
+@media (max-width: $desktop-width) {
+  .page-main__wrapper {
+    background-image: url('../img/circuit-board-tablet.png'), url('../img/bg-back-tablet.jpg');
+    background-position: 100% 26%,center;
+  }
+
+  @media (min-resolution: $retina) {
+    .page-main__wrapper{
+      background-image: url('../img/circuit-board-tablet@2x.png'), url('../img/bg-back-tablet@2x.jpg');
+    }
+  }
+
+  .page-main__heading {
+    padding-top: 191px;
+    width: 400px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .page-main__text {
+    width: 477px;
+    padding-left: 48px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .page-main__text::after {
+    width: 33px;
+    background-image: url('../img/line-tablet.svg');
+  }
+
+  .page-main__scroll {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-main__wrapper {
+    background-image: url('../img/circuit-board-mobile.png'), url('../img/bg-back-mobile.jpg');
+    background-position: 100% 19%,center;
+    background-size: 300px,cover;
+  }
+
+  @media (min-resolution: $retina) {
+    .page-main__wrapper{
+      background-image: url('../img/circuit-board-mobile@2x.png'), url('../img/bg-back-mobile@2x.jpg');
+    }
+  }
+
+  .page-main__heading {
+    width: 290px;
+    padding-top: 297px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .page-main__text {
+    width: 242px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .page-main__link {
+    width: 222px;
+  }
+
+  .page-main__link--hidden {
+    display: none;
+  }
 }
