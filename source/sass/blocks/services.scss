@@ -1,0 +1,128 @@
+.services__wrapper {
+  padding-top: 89px;
+  padding-bottom: 128px;
+  background-color: #1B2D37;
+}
+
+.services__item {
+  position: relative;
+}
+
+.services__item::after {
+  position: absolute;
+  content: '';
+  width: 63px;
+  height: 63px;
+  bottom: 0;
+  right: 0;
+  background-color: #00B2FF;
+}
+
+.services__item::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 10px;
+  z-index: 2;
+  bottom: 22px;
+  right: 24px;
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.services__heading {
+  padding: 0;
+  margin: 0;
+  margin-left: 120px;
+  padding-bottom: 52px;
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.services__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1919px) {
+  .services__list {
+    width: auto;
+  }
+
+  .services__item {
+    width: 30%;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .services__heading {
+    width: 618px;
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 45px;
+    padding-bottom: 50px;
+  }
+
+  .services__list {
+    width: 720px;
+    flex-wrap: wrap;
+  }
+
+  .services__item {
+    margin-bottom: 45px;
+    width: auto;
+  }
+
+  .services__item:nth-child(2) {
+    margin-bottom: 46px;
+  }
+
+  .services__item::before {
+    bottom: 27px;
+    right: 25px;
+  }
+
+  .services__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .services__wrapper {
+    padding-top: 50px;
+    padding-bottom: 79px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services__list {
+    width: 290px;
+  }
+
+  .services__heading {
+    width: 290px;
+    font-size: 28px;
+    line-height: 39px;
+    margin-left: 10px;
+    padding-bottom: 43px;
+  }
+
+  .services__wrapper {
+    padding-top: 51px;
+    padding-bottom: 65px;
+  }
+
+  .services__item {
+    margin-bottom: 30px;
+  }
+
+  .services__item:nth-child(2) {
+    margin-bottom: 30px;
+  }
+}

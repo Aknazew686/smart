@@ -1,0 +1,143 @@
+.sections-site {
+  margin-left: 194px;
+}
+
+.sections-site__toggle {
+  display: none;
+}
+
+.sections-site__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B2D37;
+}
+
+.sections-site__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 424px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sections-site__link {
+  font-family: $pt-mono;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+.sections-site__item {
+  margin-right: 65px;
+}
+
+.sections-site__item:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+.sections-site__item:nth-child(2) {
+  margin-left: 91px;
+}
+
+.sections-site__item:nth-child(4) {
+  margin-right: 45px;
+}
+
+.sections-site__item:nth-child(5) {
+  margin-right: 15px;
+}
+
+.sections-site__item:nth-child(6) {
+  margin-right: 46px;
+}
+
+@media (max-width: 1919px) {
+  .sections-site {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .sections-site__list {
+    width: 375px;
+    flex-direction: column;
+  }
+
+  .sections-site__item:nth-child(6) {
+    order: 7;
+  }
+
+  .sections-site__item:nth-child(4) {
+    order: 6;
+  }
+
+  .sections-site__item:nth-child(2) {
+    order: 5;
+  }
+
+  .sections-site {
+    margin-left: 0;
+    width: 376px;
+  }
+
+  .sections-site__item:nth-child(2) {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .sections-site__list {
+    width: auto;
+    padding-bottom: 29px;
+  }
+
+  .sections-site__list--closed {
+    display: none;
+  }
+
+  .sections-site__heading {
+    padding-bottom: 27px;
+    margin-bottom: 0;
+  }
+
+  .sections-site {
+    border-bottom: 1px solid #e5e5e5;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .sections-site__wrapper {
+    display: flex;
+  }
+
+  .sections-site__toggle {
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    outline: 0;
+    background-image: url(../img/menu-line.svg);
+    display: block;
+    background-repeat: no-repeat;
+  }
+
+  .sections-site__toggle--closed {
+    background-image: url(../img/menu-cross.svg);
+  }
+}
+
+
+

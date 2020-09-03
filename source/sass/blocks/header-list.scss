@@ -1,10 +1,10 @@
 .header-list {
   margin: 0;
   padding: 0;
-  margin-left: 550px;
+  margin-left: auto;
   list-style: none;
   display: flex;
-  width: 441px;
+  width: 429px;
   justify-content: space-between;
 }
 
@@ -58,7 +58,31 @@
   }
 
   .header-list {
-    width: 83px;
+    width: 81px;
     margin-left: auto;
+  }
+
+  .header-list__link--phone {
+    padding-left: 22px;
+  }
+
+  .header-list__link--mail::after {
+    background-image: url(../img/icon-mail-tablet.svg);
+    top: 37%;
+    width: 25px;
+    height: 18px;
+  }
+
+  .header-list__link--phone::after {
+    background-image: url(../img/icon-phone-tablet.svg);
+    top: 37%;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header-list {
+    width: 71px;
   }
 }

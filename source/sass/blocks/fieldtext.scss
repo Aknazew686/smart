@@ -1,0 +1,49 @@
+.fieldtext__input {
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 17px;
+  width: 269px;
+  border: none;
+  box-sizing: border-box;
+  font-family: $pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #19baff;
+}
+
+.fieldtext__input::placeholder {
+  color: #ffffff;
+}
+
+.fieldtext__input--textarea {
+  width: 570px;
+  padding-bottom: 99px;
+}
+
+@media (max-width: $desktop-width) {
+  .fieldtext__input {
+    width: 280px;
+    padding-bottom: 19px;
+  }
+
+  .fieldtext__input--textarea {
+    width: 591px;
+    padding-bottom: 105px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .fieldtext__input {
+    width: 290px;
+  }
+
+  .fieldtext__input--textarea {
+    padding-bottom: 49px;
+  }
+}
+
+
+

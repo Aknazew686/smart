@@ -1,0 +1,30 @@
+.footer-wrapper {
+  margin-left: 252px;
+}
+
+@media (max-width: 1919px) {
+  .footer-wrapper {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .footer-wrapper {
+    display: flex;
+    width: 721px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+    margin-left: 25px;
+    margin: 0 auto;
+    padding-bottom: 22px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer-wrapper {
+    display: block;
+    width: auto;
+    padding-bottom: 50px;
+  }
+}

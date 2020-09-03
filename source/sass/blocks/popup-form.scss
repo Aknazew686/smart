@@ -1,0 +1,57 @@
+.popup-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.popup-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popup-form__item {
+  margin-bottom: 27px;
+}
+
+.popup-fieldtext__input {
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 19px;
+  padding-left: 24px;
+  border: none;
+  font-family: $pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 387px;
+  background-color: #19baff;
+}
+
+.popup-fieldtext__input--textarea {
+  padding-bottom: 48px;
+}
+
+.popup-fieldtext__input::placeholder {
+  color: #ffffff;
+}
+
+.popup-form__button {
+  margin: 0;
+  padding: 0;
+  padding: 14px 165px;
+  margin-bottom: 34px;
+  border: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #00B2FF;
+  color: #ffffff;
+  cursor: pointer;
+}

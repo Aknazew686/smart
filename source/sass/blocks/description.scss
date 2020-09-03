@@ -19,3 +19,36 @@
   line-height: 22px;
   color: #666666;
 }
+
+@media (max-width: $desktop-width) {
+  .description__heading {
+    margin-bottom: 10px;
+  }
+
+  .description__heading--confidentiality {
+    margin-bottom: 14px;
+  }
+
+  .description__heading--cost {
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .description__heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .description__heading--confidentiality {
+    margin-bottom: -7px;
+  }
+
+  .description__heading--cost {
+    margin-bottom: 11px;
+  }
+
+  .description__text--cost {
+    margin-bottom: 26px;
+  }
+}

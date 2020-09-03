@@ -1,0 +1,19 @@
+.logo-wrapper {
+  display: flex;
+  margin-bottom: 49px;
+  align-items: center;
+}
+
+@media (max-width: $desktop-width) {
+  .logo-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .logo-wrapper {
+    width: 216px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+}

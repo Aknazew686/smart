@@ -1,0 +1,23 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 112px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 15px;
+}
+
+.social__item:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .social__list {
+    margin: 0 auto;
+  }
+}
