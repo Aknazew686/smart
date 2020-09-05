@@ -28,7 +28,7 @@
 .company__link {
   padding: 13px 49px;
   font-family: $roboto-condensed;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -36,6 +36,11 @@
   color: #00B2FF;
   border: 1px solid #00B2FF;
   border-radius: 5px;
+}
+
+.company__link:hover {
+  color: #ffffff;
+  background-color: #00B2FF;
 }
 
 .company__wrapper {

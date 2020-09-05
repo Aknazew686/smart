@@ -53,6 +53,11 @@
   margin-left: 50px;
 }
 
+.page-header__link:hover {
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+}
+
 @media (max-width: 1919px) {
   .page-header__wrapper {
     width: 100%;

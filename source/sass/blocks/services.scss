@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.services__item:hover {
+  opacity: 0.6;
+}
+
 .services__item::after {
   position: absolute;
   content: '';
@@ -16,6 +20,7 @@
   bottom: 0;
   right: 0;
   background-color: #00B2FF;
+  cursor: pointer;
 }
 
 .services__item::before {
@@ -28,6 +33,7 @@
   right: 24px;
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .services__heading {

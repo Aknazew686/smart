@@ -16,6 +16,14 @@
   margin-right: 0;
 }
 
+.social__image {
+  fill: #cdcdcd;
+}
+
+.social__image:hover {
+  fill: #00B2FF;
+}
+
 @media (max-width: $tablet-width) {
   .social__list {
     margin: 0 auto;

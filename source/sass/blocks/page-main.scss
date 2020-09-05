@@ -73,6 +73,11 @@
   width: 317px;
 }
 
+.page-main__link:hover {
+  color: #00B2FF;
+  background-color: #ffffff;
+}
+
 .page-main__link--hidden {
   display: inline;
   padding: 0;
@@ -93,6 +98,10 @@
   transform: rotate(-90deg);
   display: inline-block;
   padding-bottom: 79px;
+}
+
+.page-main__scroll:hover {
+  color: #00B2FF;
 }
 
 @media (max-width: $desktop-width) {

@@ -46,6 +46,11 @@
   cursor: pointer;
 }
 
+.form__button:hover {
+    color: #00B2FF;
+    background-color: #ffffff;
+}
+
 .form__flex {
   display: flex;
   width: 538px;
