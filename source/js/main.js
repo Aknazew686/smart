@@ -16,6 +16,8 @@
 
     form.addEventListener("submit", function () {
       localStorage.setItem("name", popupInputName.value);
+      localStorage.setItem("phone", popupInputPhone.value);
+      localStorage.setItem("message", popupInputMessage.value);
     });
 
     for (let anchor of anchors) {
