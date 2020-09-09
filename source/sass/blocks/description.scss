@@ -18,6 +18,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #666666;
+  margin-bottom: 21px;
 }
 
 @media (max-width: $desktop-width) {
@@ -40,15 +41,7 @@
     line-height: 28px;
   }
 
-  .description__heading--confidentiality {
-    margin-bottom: -7px;
-  }
-
   .description__heading--cost {
     margin-bottom: 11px;
-  }
-
-  .description__text--cost {
-    margin-bottom: 26px;
   }
 }

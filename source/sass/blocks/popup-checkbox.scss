@@ -36,6 +36,12 @@
   border: 1px solid #FFFFFF;
 }
 
+.popup-checkbox__input:focus + .popup-checkbox__label {
+  box-shadow:
+      0 0 0 0.1em #4A90E2,
+      0 0 0 0.2em #7ED321;
+}
+
 .popup-checkbox__label::before {
   content: "";
   z-index: 2;

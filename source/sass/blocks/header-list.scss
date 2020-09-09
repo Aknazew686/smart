@@ -6,6 +6,7 @@
   display: flex;
   width: 429px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header-list__link {
@@ -38,6 +39,14 @@
   background-position: 0 0;
 }
 
+.header-list__item {
+  margin-right: 87px;
+}
+
+.header-list__item:nth-child(2n+2) {
+  margin-right: 0;
+}
+
 .header-list__link--phone {
   position: relative;
   padding-left: 34px;
@@ -59,6 +68,10 @@
 @media (max-width: $desktop-width) {
   .header-list__text {
     display: none;
+  }
+
+  .header-list__item {
+    margin-right: 0;
   }
 
   .header-list {

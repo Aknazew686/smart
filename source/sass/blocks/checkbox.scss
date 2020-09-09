@@ -35,6 +35,13 @@
   height: 16px;
   background-color: #00B2FF;
   border: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.checkbox__input:focus + .checkbox__label {
+  box-shadow:
+      0 0 0 0.1em #4A90E2,
+      0 0 0 0.2em #7ED321;
 }
 
 .checkbox__label::before {

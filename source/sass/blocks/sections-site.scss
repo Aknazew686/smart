@@ -111,7 +111,7 @@
   }
 
   .sections-site__heading {
-    padding-bottom: 27px;
+    padding: 27px 0;
     margin-bottom: 0;
   }
 
@@ -123,6 +123,7 @@
 
   .sections-site__wrapper {
     display: flex;
+    align-items: center;
   }
 
   .sections-site__toggle {

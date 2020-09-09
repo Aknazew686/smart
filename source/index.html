@@ -30,17 +30,17 @@
           </div>
           <ul class="page-header__list header-list">
             <li class="header-list__item">
-              <a class="header-list__link header-list__link--mail" href="mailto:info@sd.ru">
+              <a class="header-list__link header-list__link--mail" href="mailto:info@sd.ru" tabindex="1">
                 <span class="header-list__text">info@sd.ru</span>
               </a>
             </li>
             <li class="header-list__item">
-              <a class="header-list__link header-list__link--phone" href="tel:+74950005252">
+              <a class="header-list__link header-list__link--phone" href="tel:+74950005252" tabindex="2">
                 <span class="header-list__text">+7 (495) 000 52 52</span>
               </a>
             </li>
           </ul>
-          <a class="page-header__link" href="#">Заказать звонок</a>
+          <a class="page-header__link" href="#" tabindex="3">Заказать звонок</a>
         </div>
       </div>
     </div>
@@ -50,9 +50,9 @@
       <div class="container">
         <h1 class="page-main__heading">Печатные платы</h1>
         <p class="page-main__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="page-main__link page-main__link--desktop" href="#form">Получить бесплатную консультацию</a>
-        <a class="page-main__link page-main__link--mobile" href="#form">Бесплатная консультация</a>
-        <a class="page-main__scroll" href="#features">Скролл вниз</a>
+        <a class="page-main__link page-main__link--desktop" href="#form" tabindex="4">Получить бесплатную консультацию</a>
+        <a class="page-main__link page-main__link--mobile" href="#form" tabindex="4">Бесплатная консультация</a>
+        <a class="page-main__scroll" href="#features" tabindex="5">Скролл вниз</a>
       </div>
     </div>
     <section class="features" id="features">
@@ -118,7 +118,7 @@
                 светотехники
                 России.</span>
             </p>
-            <a class="company__link" href="#">Подробнее</a>
+            <a class="company__link" href="#" tabindex="6">Подробнее</a>
           </div>
         </div>
       </div>
@@ -130,11 +130,11 @@
           <p class="services__heading">Service Device предлагает следующие товары и услуги</p>
           <ul class="services__list">
             <li class="services__item">
-              <a class="product-link" href="#">
+              <a class="product-link" href="#" tabindex="7">
               <div class="product">
                 <p class="product__heading">Производство печатных плат</p>
                 <picture>
-                    <source type="image/webp" media="(min-width: 1024px)"
+                    <source type="image/webp" media="(min-width: 1023px)"
                       srcset="img/production-desktop.webp, img/production-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/production-tablet.webp, img/production-tablet@2x.webp 2x">
@@ -150,11 +150,11 @@
             </a>
             </li>
             <li class="services__item">
-              <a class="product-link" href="#">
+              <a class="product-link" href="#" tabindex="8">
               <div class="product">
                 <p class="product__heading">Монтаж печатных плат</p>
                 <picture>
-                    <source type="image/webp" media="(min-width: 1024px)"
+                    <source type="image/webp" media="(min-width: 1023px)"
                       srcset="img/mounting-desktop.webp, img/mounting-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/mounting-tablet.webp, img/mounting-tablet@2x.webp 2x">
@@ -169,11 +169,11 @@
             </a>
             </li>
             <li class="services__item">
-              <a class="product-link" href="#">
+              <a class="product-link" href="#" tabindex="9">
               <div class="product">
                 <p class="product__heading product__heading--accessories">Комплектующие для светотехники</p>
                 <picture>
-                    <source type="image/webp" media="(min-width: 1024px)"
+                    <source type="image/webp" media="(min-width: 1023px)"
                       srcset="img/accessories-desktop.webp, img/accessories-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/accessories-tablet.webp, img/accessories-tablet@2x.webp 2x">
@@ -212,30 +212,30 @@
                       <span class="fieldtext">
                         <label class="visually-hidden" for="name">Имя</label>
                         <input class="fieldtext__input" type="text" name="first-name" placeholder="Имя" id="name"
-                          autocomplete="name" required>
+                          autocomplete="name" required tabindex="10">
                       </span>
                     </li>
                     <li class="form__item">
                       <span class="fieldtext">
                         <label class="visually-hidden" for="phone">Телефон</label>
-                        <input class="fieldtext__input" type="tel" name="phone" autocomplete="tel" placeholder="Телефон"
-                          id="phone" required>
+                        <input class="fieldtext__input fieldtext__input--phone" type="tel" name="phone" autocomplete="tel" placeholder="Телефон"
+                          id="phone" required tabindex="11">
                       </span>
                     </li>
                     <li class="form__item">
                       <span class="fieldtext">
                         <label class="visually-hidden" for="message">Вопрос</label>
                         <textarea class="fieldtext__input fieldtext__input--textarea" id="message" name="message"
-                          placeholder="Ваш вопрос" required></textarea>
+                          placeholder="Ваш вопрос" required tabindex="12"></textarea>
                       </span>
                     </li>
                   </ul>
                 </fieldset>
                 <div class="form__flex">
-                  <button class="form__button" type="submit">Задать вопрос</button>
+                  <button class="form__button" type="submit" tabindex="14">Задать вопрос</button>
                   <fieldset class="form__fieldset">
                     <label class="checkbox">
-                      <input class="checkbox__input" type="checkbox" name="consent" required="">
+                      <input class="checkbox__input" type="checkbox" name="consent" required tabindex="13">
                       <span class="checkbox__label">Я согласен на обработку персональных данных</span>
                     </label>
                   </fieldset>
@@ -329,8 +329,8 @@
               </div>
               <ul class="office__list office__list--closed">
                 <li class="office__item">
-                  <a class="office__link" href="https://goo.gl/maps/9kaSv3QtoNunrDCb9">г. Мытищи, Олимпийский проспект,
-                    д.10</a>
+                  <p class="office__text">г. Мытищи, Олимпийский проспект,
+                    д.10</p>
                 </li>
                 <li class="office__item">
                   <a class="office__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -401,12 +401,16 @@
     </form>
   </section>
 </div>
-  <script src="js/inputmask.min.js"></script>
+
+<script src="js/inputmask.min.js"></script>
   <script src="js/mask.js"></script>
   <script src="js/jQuery3.5.js"></script>
+
   <script src="js/main.js"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
+  <script src="js/scroll.js"></script>
+
 </body>
 
 </html>
