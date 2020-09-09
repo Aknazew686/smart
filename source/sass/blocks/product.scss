@@ -32,6 +32,19 @@
   .product__heading--accessories {
     top: 52px;
   }
+
+  .product__image {
+    width: 715px;
+    height: 256px;
+  }
+
+  .product__image--mounting {
+    width: 720px;
+  }
+
+  .product__image--accessories {
+    width: 720px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -42,5 +55,10 @@
 
   .product__heading--accessories {
     top: 31px;
+  }
+
+  .product__image {
+    width: 290px;
+    height: 256px;
   }
 }

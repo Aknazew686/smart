@@ -65,15 +65,15 @@
 }
 
 @media (max-width: $desktop-width) {
- .page-header__link {
-   display: none;
+  .page-header__link {
+    display: none;
   }
 
- .page-header__wrapper {
-   top: 20px;
-   left: 50%;
-   width: 100%;
- }
+  .page-header__wrapper {
+    top: 20px;
+    left: 50%;
+    width: 100%;
+  }
 }
 
 @media (max-width: $tablet-width) {
