@@ -17,11 +17,16 @@
     var popupBackground = document.querySelector('.popup-background')
     var body = document.querySelector('body');
     var phone = document.querySelector('.fieldtext__input--phone');
-    var formm = document.querySelector('.form')
+    var formm = document.querySelector('.form');
+    var formButon = document.querySelector('.form__button');
 
 
     var validationPhone = function () {
-      if (phone.value.length < 10 ) {
+      var value = phone.value.split('').filter(function(item){
+        return item !== "_" && item !== " " && item !== "(" && item !== ")" && item !== "+"
+      })
+      console.log(value)
+      if (value.length < 10 && value.length > 0) {
         phone.setCustomValidity('Должно быть введено 10 цифр номера ');
       }   else {
         phone.setCustomValidity('');
@@ -35,19 +40,16 @@
       body.classList.add('hidden');
     });
 
-    form.addEventListener("submit", function (evt) {
+    formButon.addEventListener('click', function () {
+      console.log(phone.value.length);
+      validationPhone();
+    });
+
+    form.addEventListener("submit", function () {
       localStorage.setItem("name", popupInputName.value);
       localStorage.setItem("phone", popupInputPhone.value);
       localStorage.setItem("message", popupInputMessage.value);
-
     });
-
-    //formm.addEventListener("submit", function (evt) {
-     // evt.preventDefault();
-      //validationPhone();
-      //console.log(phone.value.length);
-      //formm.reset();
-    //});
 
     siteListWrapper.addEventListener('click', function () {
       if (siteListToggle.classList.contains('sections-site__toggle--closed')) {
@@ -73,13 +75,13 @@
       }
     });
 
-       window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-        evt.preventDefault();
-        popup.classList.remove('popup--active');
-        popupBackground.classList.remove('popup-background--active');
-        body.classList.remove('hidden');
-      }
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+      evt.preventDefault();
+      popup.classList.remove('popup--active');
+      popupBackground.classList.remove('popup-background--active');
+      body.classList.remove('hidden');
+    }
     });
 
     popupToggle.addEventListener('click', function () {
@@ -104,6 +106,3 @@
         }
       });
     });
-
-
-

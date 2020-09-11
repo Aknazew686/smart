@@ -41,6 +41,12 @@
   margin-left: 95px;
 }
 
+@media (max-width: 1919px) {
+  .questions__image {
+    height: auto;
+  }
+}
+
 @media (max-width: $desktop-width) {
   .questions__image {
     display: none;
