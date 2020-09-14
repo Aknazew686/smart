@@ -9,6 +9,7 @@
 @media (min-resolution: $retina) {
   .page-main__wrapper{
     background-image: url('../img/circuit-board-desktop@2x.png'), url('../img/bg-back-desktop@2x.jpg');
+    background-size: 705px, cover;
   }
 }
 
@@ -114,6 +115,7 @@
   @media (min-resolution: $retina) {
     .page-main__wrapper{
       background-image: url('../img/circuit-board-tablet@2x.png'), url('../img/bg-back-tablet@2x.jpg');
+      background-size: 260px, cover;
     }
   }
 
@@ -158,7 +160,7 @@
   .page-main__wrapper {
     background-image: url('../img/circuit-board-mobile.png'), url('../img/bg-back-mobile.jpg');
     background-position: 23px 90px,center;
-    background-size: 300px,cover;
+    background-size: 300px, cover;
     padding-bottom: 1px;
   }
 
