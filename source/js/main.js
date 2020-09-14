@@ -75,7 +75,7 @@
     });
 
     window.addEventListener("keydown", function (evt) {
-      if (evt.key === 'Escape') {
+      if (evt.keyCode === 27) {
       evt.preventDefault();
       popup.classList.remove('popup--active');
       popupBackground.classList.remove('popup-background--active');
